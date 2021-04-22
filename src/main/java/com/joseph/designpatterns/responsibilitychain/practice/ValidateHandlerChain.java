@@ -23,6 +23,7 @@ public class ValidateHandlerChain implements InitializingBean {
 
     @Override
     public void afterPropertiesSet() throws Exception {
+        System.out.println("初始化ValidateHandlerChain完成");
         //获取IOC容器中 类型为 ValidateHandler 的 Bean,也就是 NotNullValidateHandler 和 MinNumberValidateHandler
         Map<String, ValidateHandler> beansOfType = applicationContext.getBeansOfType(ValidateHandler.class);
         //把所有handler添加到变量allHandlers
