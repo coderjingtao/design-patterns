@@ -1,4 +1,4 @@
-package com.joseph.designpatterns.templatemethod.code;
+package com.joseph.designpatterns.templatemethod.functionalcode2;
 
 /**
  * 使用【函数式接口】来取代抽象类及抽象方法

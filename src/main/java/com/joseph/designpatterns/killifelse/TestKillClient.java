@@ -1,6 +1,7 @@
 package com.joseph.designpatterns.killifelse;
 
-import java.nio.channels.Channel;
+import org.springframework.util.ReflectionUtils;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
@@ -51,6 +52,8 @@ public class TestKillClient {
         System.out.println(testKillClient.execute("AMZN"));
         System.out.println(testKillClient.execute("CDMK"));
         System.out.println(testKillClient.execute("EOPL"));
+
+        ReflectionUtils.clearCache();
     }
 
 }

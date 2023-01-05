@@ -1,4 +1,4 @@
-package com.joseph.designpatterns.strategy.code;
+package com.joseph.designpatterns.strategy.code.operations;
 
 public interface CalculateStrategy {
     /**
