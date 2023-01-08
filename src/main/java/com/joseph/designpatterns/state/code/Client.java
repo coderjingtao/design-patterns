@@ -1,5 +1,8 @@
 package com.joseph.designpatterns.state.code;
 
+import com.joseph.designpatterns.state.code.states.Developer;
+import com.joseph.designpatterns.state.code.states.Manager;
+
 public class Client {
     public static void main(String[] args) {
         Employee joseph = new Employee("Joseph",3000,new Developer());
@@ -7,7 +10,7 @@ public class Client {
 
         joseph.doWork();
         mary.doWork();
-        //promotion
+        System.out.println("-----After Promotion-----");
         joseph.setRole(new Manager());
         joseph.doWork();
         mary.doWork();

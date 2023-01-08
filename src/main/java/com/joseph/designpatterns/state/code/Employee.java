@@ -1,5 +1,7 @@
 package com.joseph.designpatterns.state.code;
 
+import com.joseph.designpatterns.state.code.states.Role;
+
 public class Employee {
     private final String name;
     private final int salary;
@@ -12,7 +14,7 @@ public class Employee {
     }
 
     public void doWork(){
-        System.out.println("My name is "+ name);
+        System.out.print("My name is "+ name);
         role.doWork();
     }
 
